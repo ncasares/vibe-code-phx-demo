@@ -24,8 +24,8 @@ export function AboutSection() {
         <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
           <ScrollReveal delay={0.1}>
             <p>
-              I'm a designer and developer who specializes in "vibe coding" — creating digital experiences that not only
-              function flawlessly but feel right. With years of experience in the startup ecosystem, I've learned that
+              I&apos;m a designer and developer who specializes in &ldquo;vibe coding&rdquo; — creating digital experiences that not only
+              function flawlessly but feel right. With years of experience in the startup ecosystem, I&apos;ve learned that
               the best products are built at the intersection of beautiful design and thoughtful engineering.
             </p>
           </ScrollReveal>
@@ -40,7 +40,7 @@ export function AboutSection() {
 
           <ScrollReveal delay={0.3}>
             <p>
-              Whether you're a startup looking to build your MVP or an established company seeking to refresh your
+              Whether you&apos;re a startup looking to build your MVP or an established company seeking to refresh your
               digital presence, I bring a unique blend of design sensibility, technical expertise, and startup hustle to
               every project.
             </p>

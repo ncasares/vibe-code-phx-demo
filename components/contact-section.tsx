@@ -61,7 +61,7 @@ export function ContactSection() {
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
           <p className="text-center text-muted-foreground mb-8">
-            Have a project in mind? Let's talk about how we can work together.
+            Have a project in mind? Let&apos;s talk about how we can work together.
           </p>
         </ScrollReveal>
 
