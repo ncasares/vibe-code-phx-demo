@@ -13,7 +13,7 @@ export function HeroSection() {
           transition={{ duration: 0.6, ease: [0.21, 0.47, 0.32, 0.98] }}
           className="mb-8 flex justify-center"
         >
-          <div className="relative w-32 h-32 rounded-full overflow-hidden ring-4 ring-primary/20">
+          <div className="relative w-32 h-32 overflow-hidden border-4 border-foreground brutal-shadow">
             <Image src="/professional-headshot.png" alt="Cody Robertson" fill className="object-cover" priority />
           </div>
         </motion.div>
@@ -22,7 +22,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.2, ease: [0.21, 0.47, 0.32, 0.98] }}
-          className="text-5xl md:text-7xl font-bold mb-4 text-balance"
+          className="text-5xl md:text-7xl font-black uppercase mb-4 text-balance tracking-tighter"
         >
           Cody Robertson
         </motion.h1>
@@ -31,7 +31,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.3, ease: [0.21, 0.47, 0.32, 0.98] }}
-          className="text-xl md:text-2xl text-muted-foreground mb-6 text-balance"
+          className="text-xl md:text-2xl font-black text-accent mb-6 text-balance uppercase"
         >
           Vibe Coding Expert
         </motion.p>
@@ -40,7 +40,7 @@ export function HeroSection() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.6, delay: 0.4, ease: [0.21, 0.47, 0.32, 0.98] }}
-          className="text-lg md:text-xl text-muted-foreground/80 mb-8 text-balance"
+          className="text-lg md:text-xl text-muted-foreground mb-8 text-balance font-bold"
         >
           Designer & Startup Specialist
         </motion.p>
@@ -53,13 +53,13 @@ export function HeroSection() {
         >
           <a
             href="#portfolio"
-            className="inline-flex items-center justify-center rounded-md bg-primary px-8 py-3 text-sm font-medium text-primary-foreground hover:bg-primary/90 transition-colors"
+            className="inline-flex items-center justify-center bg-primary px-8 py-4 text-sm font-black uppercase tracking-wider text-primary-foreground border-4 border-primary brutal-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_currentColor] transition-all duration-100"
           >
             View Work
           </a>
           <a
             href="#contact"
-            className="inline-flex items-center justify-center rounded-md border border-input bg-background px-8 py-3 text-sm font-medium hover:bg-accent hover:text-accent-foreground transition-colors"
+            className="inline-flex items-center justify-center border-4 border-foreground bg-background px-8 py-4 text-sm font-black uppercase tracking-wider brutal-shadow hover:bg-accent hover:text-accent-foreground hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_currentColor] transition-all duration-100"
           >
             Get in Touch
           </a>

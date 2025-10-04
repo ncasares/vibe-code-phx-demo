@@ -15,13 +15,13 @@ export function AboutSection() {
   ]
 
   return (
-    <section id="about" className="py-20 px-4 bg-muted/30">
+    <section id="about" className="py-20 px-4 bg-accent/10 border-t-4 border-b-4 border-foreground">
       <div className="max-w-4xl mx-auto">
         <ScrollReveal>
-          <h2 className="text-3xl md:text-4xl font-bold mb-8 text-center">About Me</h2>
+          <h2 className="text-3xl md:text-4xl font-black uppercase mb-8 text-center tracking-tighter">About Me</h2>
         </ScrollReveal>
 
-        <div className="space-y-6 text-lg leading-relaxed text-muted-foreground">
+        <div className="space-y-6 text-lg leading-relaxed text-foreground font-medium">
           <ScrollReveal delay={0.1}>
             <p>
               I&apos;m a designer and developer who specializes in &ldquo;vibe coding&rdquo; — creating digital experiences that not only

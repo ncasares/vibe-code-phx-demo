@@ -55,7 +55,7 @@ export function PortfolioSection() {
       <section id="portfolio" className="py-20 px-4">
         <div className="max-w-6xl mx-auto">
           <ScrollReveal>
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center">Portfolio</h2>
+            <h2 className="text-3xl md:text-4xl font-black uppercase mb-12 text-center tracking-tighter">Portfolio</h2>
           </ScrollReveal>
           <div className="text-center text-muted-foreground">
             <p>No portfolio items yet. Check back soon!</p>
@@ -75,7 +75,7 @@ export function PortfolioSection() {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {portfolioItems.map((item, index) => (
             <ScrollReveal key={item.id} delay={index * 0.1} direction="up">
-              <div className="group relative overflow-hidden rounded-lg border border-border bg-card h-full">
+              <div className="group relative overflow-hidden border-4 border-foreground bg-card h-full brutal-shadow hover:translate-x-[-2px] hover:translate-y-[-2px] hover:shadow-[6px_6px_0px_0px_currentColor] transition-all duration-100">
                 <div className="aspect-[4/3] relative overflow-hidden">
                   <Image
                     src={item.image_url || "/placeholder.svg"}
@@ -85,8 +85,8 @@ export function PortfolioSection() {
                   />
                 </div>
                 <div className="p-4">
-                  <h3 className="font-semibold text-lg mb-2">{item.title}</h3>
-                  {item.description && <p className="text-sm text-muted-foreground line-clamp-2">{item.description}</p>}
+                  <h3 className="font-black text-lg mb-2 uppercase tracking-wide">{item.title}</h3>
+                  {item.description && <p className="text-sm text-foreground/80 line-clamp-2 font-medium">{item.description}</p>}
                 </div>
               </div>
             </ScrollReveal>

@@ -54,10 +54,10 @@ export function ContactSection() {
   }
 
   return (
-    <section id="contact" className="py-20 px-4 bg-muted/30">
+    <section id="contact" className="py-20 px-4 bg-secondary/20 border-t-4 border-foreground">
       <div className="max-w-2xl mx-auto">
         <ScrollReveal>
-          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-center">Get in Touch</h2>
+          <h2 className="text-3xl md:text-4xl font-black uppercase mb-4 text-center tracking-tighter">Get in Touch</h2>
         </ScrollReveal>
         <ScrollReveal delay={0.1}>
           <p className="text-center text-muted-foreground mb-8">
@@ -68,7 +68,7 @@ export function ContactSection() {
         <ScrollReveal delay={0.2}>
           <form onSubmit={handleSubmit} className="space-y-6">
             <div>
-              <label htmlFor="name" className="block text-sm font-medium mb-2">
+              <label htmlFor="name" className="block text-sm font-black uppercase mb-2 tracking-wider">
                 Name
               </label>
               <Input
@@ -85,7 +85,7 @@ export function ContactSection() {
             </div>
 
             <div>
-              <label htmlFor="email" className="block text-sm font-medium mb-2">
+              <label htmlFor="email" className="block text-sm font-black uppercase mb-2 tracking-wider">
                 Email
               </label>
               <Input
@@ -100,7 +100,7 @@ export function ContactSection() {
             </div>
 
             <div>
-              <label htmlFor="message" className="block text-sm font-medium mb-2">
+              <label htmlFor="message" className="block text-sm font-black uppercase mb-2 tracking-wider">
                 Message
               </label>
               <Textarea
